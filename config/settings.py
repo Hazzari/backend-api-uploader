@@ -178,7 +178,4 @@ SITE_ID = 1
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS = [
-    'http://0.0.0.0',
-    'https://stackoverflow.com',
-]
+CORS_ORIGIN_ALLOW_ALL = True
