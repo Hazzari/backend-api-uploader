@@ -1,6 +1,7 @@
 import imghdr
 import uuid
 
+
 def validate_img(file):
     """ Проверка размера файла и расширения
     """
