@@ -1,5 +1,5 @@
 import imghdr
-
+import uuid
 
 def validate_img(file):
     """ Проверка размера файла и расширения
@@ -16,7 +16,9 @@ def get_path_upload_image(file) -> str:
     """Построение пути к файлу изображения,
        format: (media)/image/photo.jpg
     """
-    return f'./media/image/{file}'
+    ext_file = str(file).split('.')[1]
+
+    return f'./media/image/{uuid.uuid4().hex}.{ext_file}'
 
 
 def save_file(file):
